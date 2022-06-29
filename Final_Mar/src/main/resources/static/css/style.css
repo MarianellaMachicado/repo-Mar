@@ -1,0 +1,33 @@
+/* CONFIGURACION PARA EL FOOTER
+body{
+	position: relative;
+	padding-bottom: 3em;
+	min-height: 100vh;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}*/
+
+body{
+	/*Configuración del footer*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+	/*Configuracion de fondo inicio*/
+	background: #2E86C1;
+	background: linear-gradient(to right, #6f42c1, #2E86C1);
+}
+footer{
+	/*Configuración del footer*/
+	margin-top: auto;
+}
+
+.bg{
+	background-image: url(/images/fondo.png);
+	background-position: center center;
+	background-size: cover;
+}
