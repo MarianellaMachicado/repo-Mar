@@ -5,24 +5,13 @@
 	</head>
 	<body>
 		<footer th:fragment="footer">
-			<div class="container-fluid"> <!-- fixed-bottom sticky-bottom para que el footer abajo  -->
+			<div class="container-fluid">
 				<div class="row p-4 pb-1 bg-dark text-secondary">
-					<div class="col-xs-12 col-md-6 col-lg-3">
-						<p class="h3 mb-2">Agencia de Trabajo</p>
-						<p class="text-secondary mb-4">San Salvador de Jujuy - Av. Italo 21321</p>
-					</div>
-					
-					<div class="col-xs-12 col-md-6 col-lg-3">
-						<p class="h5 mb-2">Contacto</p>
-						<div  class="mb-2">
-							<p>Whatsapp: 0388-7863421</p>
-						</div>
-					</div>
-					
-					<div class="col-xs-12 pt-2"> 
-			    		<p class="text-secondary text-center">Copyright - Todos los derechos reservados 2022</p>
-			    	</div>
-				</div>
+					<p class="text-center">
+					      AppEmpleos | © Copyright - Todos lo derechos reservados 2022 | 
+					     <a th:href="@{/empleos/autores}">Autores</a>
+				   </p>		
+				</div> 
 			</div>
 			
 			<script src="/webjars/jquery/jquery.min.js" type="text/javascript"></script>
