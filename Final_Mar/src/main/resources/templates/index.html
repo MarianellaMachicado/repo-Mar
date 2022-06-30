@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org">
-	<head lang="es">
+	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
 		<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
@@ -8,54 +8,9 @@
 	</head>
 	
 	<body>
-		<div class="container w-75 mt-5 rounded shadow">
-			<div class="row align-items-strech">
-				<div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounder">
-				</div>
-				<div class="col bg-white p-5 rounded-end">
-					<div class="text-end">
-						<img alt="logo" src="/images/logo.png" width="100">
-					</div>
-					<h2 class="fw-bold text-center py-5">Bienvenido</h2>
-					
-					<!-- Login -->
-					<form action="#">
-						<div class="mb-4">
-							<label class="form-label">Tipo de Usuario</label>
-							<select class="form-select" aria-label="Default select example">
-								<option selected>-</option>
-								<option value="empleador">Empleador</option>
-								<option value="ciudadano">Ciudadano</option>
-							</select>
-						</div>
-						
-						<!-- CUIT/DNI -->
-						<div class="mb-4">
-							<label for="usuario" class="form-label">Ingrese CUIT/DNI</label>
-							<input type="text" class="form-control" name="usuario"/>
-						</div>
-						
-						<!-- Contraseña -->
-						<div class="mb-4">
-							<label for="password" class="form-label">Contraseña</label>
-							<input type="password" class="form-control" name="password"/>
-						</div>
-						
-						<!-- Botón de inicio de sesión-->
-						<div class="d-grid">
-							<button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-						</div>
-						
-						<!-- Registro de nuevo usuario  -->
-						<div class="my-3">
-							<span>No tienes cuenta? <a href="#">Regístrate</a></span>
-						</div>
-					</form>
-					
-				</div>
-			</div>
-		</div>
 		
+		 <header th:replace="/layouts/header :: header"></header>
 		<footer th:replace="/layouts/footer :: footer"></footer>
+		
 	</body>
 </html>

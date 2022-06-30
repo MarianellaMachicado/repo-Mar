@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+		<title>Acerca de</title>
+	</head>
+	
+	<body>
+		<header th:replace="/layouts/header :: header"></header>
+		<div class="container-fluid">
+		
+			<!-- Card-->
+				<div class="row justify-content-center" th:each="autor:${autores}">
+				<div class="card mb-3 mt-3" style="max-width: 600px;">
+					<div class="row g-0">
+						<!-- Imagen -->
+						<div class="col-md-4 mt-3">
+					    	<img th:src="@{/images/{name}(name=${autor.urlImagen})}" class="img-fluid rounded-start" alt="integrante">
+					    </div>
+					    
+					    <!-- Descripción -->
+					    <div class="col-md-8 mb-4">
+					    	<div class="card-body">
+						        <h5 class="card-title" th:text=${autor.apellidoYnombre}></h5>
+						        <p class="card-text" th:text=${autor.descripcion}>/p>
+						        <p class="card-text" th:text=${autor.grupo}><small class="text-muted"></small></p>
+					      </div>
+					    </div>
+					</div>
+				</div> 
+			 </div>
+			</div>
+			
+			
+		
+		<footer th:replace="/layouts/footer :: footer"></footer>	
+	</body>
+</html>
