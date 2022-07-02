@@ -1,5 +1,9 @@
 package ar.edu.unju.fi.pvisual.util;
-
+/**
+ * Contiene información de un autor del proyecto
+ * @author Marianella Machicado
+ *
+ */
 public class Autor {
 	private int id;
 	private String urlImagen;
@@ -7,10 +11,21 @@ public class Autor {
 	private String descripcion;
 	private String grupo;
 	
+	/**
+	 * Constructo por defecto sin parametros
+	 */
 	public Autor() {
 		
 	}
-
+	
+	/**
+	 * Constructor con todos los parametros de la clase Autor
+	 * @param id
+	 * @param urlImagen
+	 * @param apellidoYnombre
+	 * @param descripcion
+	 * @param grupo
+	 */
 	public Autor(int id, String urlImagen, String apellidoYnombre, String descripcion, String grupo) {
 		this.id = id;
 		this.urlImagen = urlImagen;
