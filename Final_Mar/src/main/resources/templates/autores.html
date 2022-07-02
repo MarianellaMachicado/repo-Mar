@@ -9,10 +9,10 @@
 	
 	<body>
 		<header th:replace="/layouts/header :: header"></header>
-		<div class="container-fluid">
 		
+		<div class="container-fluid">
 			<!-- Card-->
-				<div class="row justify-content-center" th:each="autor:${autores}">
+			<div class="row justify-content-center" th:each="autor:${autores}">
 				<div class="card mb-3 mt-3" style="max-width: 600px;">
 					<div class="row g-0">
 						<!-- Imagen -->
@@ -23,18 +23,20 @@
 					    <!-- Descripción -->
 					    <div class="col-md-8 mb-4">
 					    	<div class="card-body">
-						        <h5 class="card-title" th:text=${autor.apellidoYnombre}></h5>
+					    		<h5 class="card-title" th:text=${autor.apellidoYnombre}></h5>
 						        <p class="card-text" th:text=${autor.descripcion}>/p>
 						        <p class="card-text" th:text=${autor.grupo}><small class="text-muted"></small></p>
-					      </div>
+					    	</div>
 					    </div>
+					    
 					</div>
-				</div> 
-			 </div>
-			</div>
+					
+				</div> 	
+				
+			</div>	
 			
-			
-		
+		</div>
+				
 		<footer th:replace="/layouts/footer :: footer"></footer>	
 	</body>
 </html>
