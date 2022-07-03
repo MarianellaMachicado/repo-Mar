@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.pvisual.util;
+package ar.edu.unju.fi.pvisual.model;
 /**
  * Contiene información de un autor del proyecto
  * @author Marianella Machicado

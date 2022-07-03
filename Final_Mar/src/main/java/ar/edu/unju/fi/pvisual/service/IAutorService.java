@@ -1,6 +1,6 @@
 package ar.edu.unju.fi.pvisual.service;
 
-import ar.edu.unju.fi.pvisual.util.Autor;
+import ar.edu.unju.fi.pvisual.model.Autor;
 import ar.edu.unju.fi.pvisual.util.ListaAutor;
 
 public interface IAutorService {
