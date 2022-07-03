@@ -3,6 +3,8 @@ package ar.edu.unju.fi.pvisual.util;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Component;
+
+import ar.edu.unju.fi.pvisual.model.Autor;
 /**
  * Clase que contiene una lista con los autores del grupo 23 que participaron en el proyecto
  * @author Marianella Machicado
